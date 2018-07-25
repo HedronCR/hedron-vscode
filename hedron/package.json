@@ -1,0 +1,26 @@
+{
+    "name": "hedron",
+    "displayName": "Hedron",
+    "description": "VSCode support for the Hedron library.",
+    "version": "0.0.1",
+    "publisher": "Qwerp-Derp",
+    "engines": {
+        "vscode": "^1.25.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "hdml",
+            "aliases": ["HDML"],
+            "extensions": [".hdml"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "hdml",
+            "scopeName": "text.hdml",
+            "path": "./syntaxes/hdml.json"
+        }]
+    }
+}
